@@ -677,7 +677,7 @@ img {
 }
 
 .contact-form-checkbox:focus + .contact-form-checkbox-label::before {
-  outline: 1px solid #212121;
+  outline: none;
 }
 .contact-form-checkbox:checked + .contact-form-checkbox-label::before {
   background-image: url(../images/modal/icon_check.svg);
