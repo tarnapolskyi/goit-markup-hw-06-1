@@ -401,6 +401,9 @@ img {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+.subscribe {
+  margin-left: 93px;
+}
 .subscribe-title {
   font-weight: bold;
   font-size: 14px;
@@ -413,13 +416,21 @@ img {
 .mailing {
   display: flex;
 }
-.contact-form-input {
+.subscribe-form-input {
+  width: 100%;
   margin-right: 12px;
   background-color: inherit;
   color: #ffffff;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-sizing: border-box;
+  border-radius: 4px;
+
+  outline: none;
 }
-.contact-form-input::placeholder {
+.subscribe-form-input::placeholder {
   color: rgba(255, 255, 255, 0.6);
+  font-size: 16px;
+  line-height: 1.25;
 }
 .mailing-button {
   display: flex;
@@ -436,7 +447,7 @@ img {
   border-radius: 4px;
   letter-spacing: 0.06em;
 }
-.social-list-icon {
+.subscribe-social-list-icon {
   margin-left: 10px;
 }
 
@@ -681,7 +692,10 @@ img {
 }
 
 .contact-form-checkbox:focus + .contact-form-checkbox-label::before {
-  outline: none;
+  background-color: var(--accent-color);
+  background-origin: border-box;
+  background-repeat: no-repeat;
+  border: none;
 }
 .contact-form-checkbox:checked + .contact-form-checkbox-label::before {
   background-image: url(../images/modal/icon_check.svg);
@@ -692,7 +706,7 @@ img {
   content: '';
   width: 16px;
   height: 15px;
-  outline: 1px solid #212121;
+  border: 1px solid #212121;
   cursor: pointer;
   margin-right: 7px;
 }
