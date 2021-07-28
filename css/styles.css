@@ -692,14 +692,16 @@ img {
 }
 
 .contact-form-checkbox:focus + .contact-form-checkbox-label::before {
-  background-color: var(--accent-color);
-  background-origin: border-box;
-  background-repeat: no-repeat;
-  border: none;
+  border-color: var(--accent-color);
 }
 .contact-form-checkbox:checked + .contact-form-checkbox-label::before {
   background-image: url(../images/modal/icon_check.svg);
+  background-color: var(--accent-color);
   background-size: 15px 14px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-origin: padding-box;
+  border: none;
 }
 .contact-form-checkbox-label::before {
   display: block;
