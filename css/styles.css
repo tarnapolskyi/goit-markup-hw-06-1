@@ -356,9 +356,13 @@ img {
   padding-top: 60px;
   padding-bottom: 60px;
 }
+
 .footer-section-style {
   display: flex;
   align-items: baseline;
+}
+.footer-section {
+  width: 231px;
 }
 .footer-logo {
   display: block;
@@ -403,6 +407,7 @@ img {
 }
 .subscribe {
   margin-left: 93px;
+  width: 570px;
 }
 .subscribe-title {
   font-weight: bold;
@@ -431,6 +436,9 @@ img {
   color: rgba(255, 255, 255, 0.6);
   font-size: 16px;
   line-height: 1.25;
+  padding-left: 16px;
+  padding-top: 15px;
+  padding-bottom: 15px;
 }
 .mailing-button {
   display: flex;
